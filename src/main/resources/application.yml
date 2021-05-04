@@ -1,0 +1,41 @@
+spring:
+  application:
+    name: API Placar de Botão
+  profiles:
+    active: desenvolvimento
+  jpa:
+    database: MYSQL
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: none
+  datasource:
+    url: jdbc:mysql://localhost:3306/botao_dev
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: 
+    password:
+---
+server:
+  port: 8080
+---
+spring:
+  profiles: development
+  jpa:
+    show-sql: false
+  datasource:
+    url: jdbc:mysql://localhost:3306/botao_dev
+---
+spring:
+  profiles: test
+  jpa:
+    show-sql: false
+  datasource:
+    url: jdbc:mysql://localhost:3306/botao_tst
+---
+spring:
+  profiles: production
+  jpa:
+    show-sql: false
+  datasource:
+    url: jdbc:mysql://localhost:3306/botao
