@@ -1,6 +1,5 @@
 package br.com.clouzada.botaoapi.resource
 
-import br.com.clouzada.botaoapi.model.Jogador
 import br.com.clouzada.botaoapi.model.Time
 import br.com.clouzada.botaoapi.model.command.EscalcaoCommand
 import br.com.clouzada.botaoapi.service.impl.TimeServiceImpl

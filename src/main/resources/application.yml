@@ -13,7 +13,7 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/botao_dev
     driver-class-name: com.mysql.cj.jdbc.Driver
-    username: 
+    username:
     password:
 ---
 server:
